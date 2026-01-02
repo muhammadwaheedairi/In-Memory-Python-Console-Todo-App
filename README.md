@@ -101,3 +101,22 @@ All code includes references to the task IDs from the implementation plan:
 - T-002: Task Manager
 - T-003: Console Interface
 - T-004: Main Application
+
+## Running the Application
+
+You can run the application in two ways:
+
+1. Direct execution:
+   ```bash
+   python src/main.py
+   ```
+
+2. Using the run script:
+   ```bash
+   python run.py
+   ```
+
+3. Using the installed package (after pip install):
+   ```bash
+   todo-app
+   ```
