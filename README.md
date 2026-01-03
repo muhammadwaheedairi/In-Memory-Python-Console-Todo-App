@@ -1,45 +1,91 @@
-# In-Memory Python Console Todo App
+# 📝 Hackathon II - Phase I: In-Memory Python Console Todo App
 
-A simple, in-memory todo application that runs in the console. This application allows you to manage your tasks with basic CRUD operations.
+![Python](https://img.shields.io/badge/python-3.13+-blue?style=flat-square)
+![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
+![Spec-Driven](https://img.shields.io/badge/spec-driven-brightgreen?style=flat-square)
 
-## Features
+> **Project Type:** Hackathon II, Phase I  
+> **Objective:** Build a modern, in-memory CLI todo application with full CRUD operations, following Spec-KitPlus + Claude Code workflow.
+
+A professional, in-memory todo application that runs in the console. Features a modern, interactive CLI interface with **color-coded output, styled tables, and menus**.
+
+---
+
+## 📌 Table of Contents
+
+1. [Features](#-features)
+2. [Requirements](#-requirements)
+3. [Setup](#-setup)
+4. [Usage](#-usage)
+5. [Project Structure](#-project-structure)
+6. [Implementation Details](#-implementation-details)
+7. [Specifications](#-specifications)
+8. [Task IDs](#-task-ids)
+9. [Running the Application](#-running-the-application)
+10. [Modern UI Features](#-modern-ui-features)
+11. [Hackathon II - Phase I](#-hackathon-ii---phase-i)
+
+---
+
+## 🛠 Features
 
 - Add tasks with title and description
-- List all tasks with status indicators
+- List all tasks with **color-coded status indicators**
 - Update task details
 - Delete tasks by ID
 - Mark tasks as complete/incomplete
-- Console-based interface
+- Console-based interface with **modern UI**
+- Interactive menus using **Questionary**
+- Rich-formatted tables and panels using **Rich**
+- Clear screen between actions
+- Success/error messages styled with **Rich**
+- Confirmation prompts for destructive actions
 
-## Requirements
+---
 
-- Python 3.13+
-- UV package manager (optional, for virtual environment management)
+## ⚙️ Requirements
 
-## Setup
+- Python 3.13+  
+- UV package manager (optional)  
+- Python libraries:
+  ```bash
+  pip install rich questionary
+````
 
-1. Clone or download this repository
+---
+
+## 🚀 Setup
+
+1. Clone or download the repository
 2. Navigate to the project directory
-3. Run the application directly with Python:
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+# or directly
+pip install rich questionary
+```
+
+4. Run the application:
 
 ```bash
 python src/main.py
 ```
 
-## Usage
+---
 
-Once the application is running, you can use the following commands:
+## 📖 Usage
 
 ### Available Commands
 
-- `add "title" "description"` - Add a new task
-- `list` - List all tasks
-- `update id "title" "description"` - Update a task
-- `delete id` - Delete a task
-- `complete id` - Mark task as complete
-- `incomplete id` - Mark task as incomplete
-- `help` - Show available commands
-- `quit` or `exit` - Exit the application
+* `add "title" "description"` — Add a new task
+* `list` — List all tasks
+* `update id "title" "description"` — Update a task
+* `delete id` — Delete a task
+* `complete id` — Mark task as complete
+* `incomplete id` — Mark task as incomplete
+* `help` — Show available commands
+* `quit` / `exit` — Exit the application
 
 ### Examples
 
@@ -60,7 +106,9 @@ complete 1
 delete 1
 ```
 
-## Project Structure
+---
+
+## 🏗 Project Structure
 
 ```
 src/
@@ -77,46 +125,89 @@ src/
 └── main.py              # Main application entry point
 ```
 
-## Implementation Details
+---
 
-- All data is stored in memory only (no persistent storage)
-- Console-based interface only
-- Built with Python standard library only (no external dependencies)
-- Follows object-oriented design principles
+## 📝 Implementation Details
 
-## Specifications
+* In-memory storage only (no database)
+* Console-based interface
+* Built with Python standard library, **Rich**, and **Questionary**
+* Object-oriented design principles applied
 
-This application was built following the Spec-Driven Development approach:
+---
 
-- Specification: `specs/todo-app/spec.md`
-- Implementation Plan: `specs/todo-app/plan.md`
-- Implementation Tasks: `specs/todo-app/tasks.md`
-- Project Constitution: `.specify/memory/constitution.md`
+## 🧩 Specifications
 
-## Task IDs
+Following the **Spec-Driven Development** workflow:
 
-All code includes references to the task IDs from the implementation plan:
+* Specification: `specs/todo-app/spec.md`
+* Implementation Plan: `specs/todo-app/plan.md`
+* Implementation Tasks: `specs/todo-app/tasks.md`
+* Project Constitution: `.specify/memory/constitution.md`
 
-- T-001: Task Model
-- T-002: Task Manager
-- T-003: Console Interface
-- T-004: Main Application
+---
 
-## Running the Application
+## 🔢 Task IDs
 
-You can run the application in two ways:
+* T-001: Task Model
+* T-002: Task Manager
+* T-003: Console Interface
+* T-004: Main Application
+
+---
+
+## 💻 Running the Application
+
+Multiple options:
 
 1. Direct execution:
-   ```bash
-   python src/main.py
-   ```
 
-2. Using the run script:
-   ```bash
-   python run.py
-   ```
+```bash
+python src/main.py
+```
 
-3. Using the installed package (after pip install):
-   ```bash
-   todo-app
-   ```
+2. Using run script:
+
+```bash
+python run.py
+```
+
+3. Using installed package (after pip install):
+
+```bash
+todo-app
+```
+
+---
+
+## 🎨 Modern UI Features
+
+* Interactive arrow-key menus using **Questionary**
+* Rich-styled tables with color-coded status indicators (✅ complete, ❌ incomplete)
+* Styled headers and panels using **Rich**
+* Clear screen between actions
+* Rich-styled success/error messages
+* Task selection with visual indicators
+* Confirmation prompts for destructive actions
+
+---
+
+## 🏆 Hackathon II - Phase I
+
+**Goal:** Demonstrate **spec-driven development** using Claude Code + Spec-KitPlus.
+
+**Deliverables:**
+
+* Working console app with all basic features
+* GitHub repo including:
+
+  * Constitution file: `.specify/memory/constitution.md`
+  * `specs/` folder with all specification files
+  * `/src` folder with Python source code
+  * README.md with setup instructions
+  * CLAUDE.md with Claude Code instructions
+
+> **Next Phases:**
+> Phase II → Full-stack web application
+> Phase III → Chatbot integration
+> Later phases → Deployment & cloud integration
