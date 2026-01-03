@@ -1,4 +1,3 @@
-````markdown
 # 📝 Hackathon II - Phase I: In-Memory Python Console Todo App
 
 ![Python](https://img.shields.io/badge/python-3.13+-blue?style=flat-square)
@@ -215,5 +214,3 @@ todo-app
 Phase II → Full-stack web application
 Phase III → Chatbot integration
 Later phases → Deployment & cloud integration
-
-```
