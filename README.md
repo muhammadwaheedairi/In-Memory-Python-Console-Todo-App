@@ -1,3 +1,4 @@
+````markdown
 # 📝 Hackathon II - Phase I: In-Memory Python Console Todo App
 
 ![Python](https://img.shields.io/badge/python-3.13+-blue?style=flat-square)
@@ -48,16 +49,17 @@ A professional, in-memory todo application that runs in the console. Features a 
 - Python 3.13+  
 - UV package manager (optional)  
 - Python libraries:
-  ```bash
-  pip install rich questionary
+
+```bash
+pip install rich questionary
 ````
 
 ---
 
 ## 🚀 Setup
 
-1. Clone or download the repository
-2. Navigate to the project directory
+1. Clone or download the repository.
+2. Navigate to the project directory.
 3. Install dependencies:
 
 ```bash
@@ -78,14 +80,16 @@ python src/main.py
 
 ### Available Commands
 
-* `add "title" "description"` — Add a new task
-* `list` — List all tasks
-* `update id "title" "description"` — Update a task
-* `delete id` — Delete a task
-* `complete id` — Mark task as complete
-* `incomplete id` — Mark task as incomplete
-* `help` — Show available commands
-* `quit` / `exit` — Exit the application
+| Command                           | Description             |
+| --------------------------------- | ----------------------- |
+| `add "title" "description"`       | Add a new task          |
+| `list`                            | List all tasks          |
+| `update id "title" "description"` | Update a task           |
+| `delete id`                       | Delete a task           |
+| `complete id`                     | Mark task as complete   |
+| `incomplete id`                   | Mark task as incomplete |
+| `help`                            | Show available commands |
+| `quit` / `exit`                   | Exit the application    |
 
 ### Examples
 
@@ -158,21 +162,21 @@ Following the **Spec-Driven Development** workflow:
 
 ## 💻 Running the Application
 
-Multiple options:
+### Options:
 
-1. Direct execution:
+1. **Direct execution:**
 
 ```bash
 python src/main.py
 ```
 
-2. Using run script:
+2. **Using run script:**
 
 ```bash
 python run.py
 ```
 
-3. Using installed package (after pip install):
+3. **Using installed package (after pip install):**
 
 ```bash
 todo-app
@@ -207,7 +211,9 @@ todo-app
   * README.md with setup instructions
   * CLAUDE.md with Claude Code instructions
 
-> **Next Phases:**
-> Phase II → Full-stack web application
-> Phase III → Chatbot integration
-> Later phases → Deployment & cloud integration
+**Next Phases:**
+Phase II → Full-stack web application
+Phase III → Chatbot integration
+Later phases → Deployment & cloud integration
+
+```
